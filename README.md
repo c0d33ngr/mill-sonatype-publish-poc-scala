@@ -90,5 +90,5 @@ mill-release -i \
 --awaitTimeout 36000 \
 --connectTimeout 36000 \
 --shouldRelease false \
---bundleName io.github.c0d33ngr-foo:0.0.3
+--bundleName io.github.c0d33ngr-bar:0.0.3
 ```
