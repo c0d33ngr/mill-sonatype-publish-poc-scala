@@ -1,5 +1,5 @@
-package foo
-object Foo {
+package bar
+object Bar {
   def main(args: Array[String]): Unit = {
     println("Hello World")
   }
