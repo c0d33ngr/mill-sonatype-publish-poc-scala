@@ -75,14 +75,13 @@ gpg --keyserver  keyserver.ubuntu.com --recv-keys longIDHere
 ### 6. Publish to Sonatype Maven Central (Individual module `foo`)
 
 ```bash
-./mill -i foo.publishSonatypeCentral
+./mill-release -i bar.publishSonatypeCentral
 ```
 
 ### 7. Publish to Sonatype Maven Central(Several modules publish at once)
 
 ```bash
-mill -i \
-mill.contrib.sonatypecentral.SonatypeCentralPublishModule/publishAll \
+mill-release -i \
 --username myusername \
 --password mypassword \
 --gpgArgs --passphrase=$MILL_PGP_PASSPHRASE,--no-tty,--pinentry-mode,loopback,--batch,--yes,-a,-b \
