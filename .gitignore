@@ -3,6 +3,8 @@ out/
 .metals/
 .vscode/
 .idea/
+.bsp/
+.scala-build/
 
 *.class
 *.log
