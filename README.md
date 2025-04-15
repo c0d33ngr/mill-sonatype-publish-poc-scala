@@ -75,5 +75,5 @@ gpg --keyserver  keyserver.ubuntu.com --recv-keys longIDHere
 ### 6. Publish to Sonatype Maven Central (Individual module `bar`)
 
 ```bash
-./mill-release -i bar.publishSonatypeCentral
+./mill-release bar.publishSonatypeCentral
 ```
