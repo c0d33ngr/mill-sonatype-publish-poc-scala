@@ -5,12 +5,12 @@ import mill.scalalib.sonatypecentral.SonatypeCentralPublishModule
 object bar extends ScalaModule with SonatypeCentralPublishModule {
   //def scalaVersion = "2.13.8"
   def scalaVersion = "3.6.4"
-  def publishVersion = "0.0.3"
+  def publishVersion = "0.0.4"
 
   def pomSettings = PomSettings(
     description = "Mill Sonatype Publish PoC Scala",
     organization = "io.github.c0d33ngr",
-    url = "https://github.com/c0d33ngr/example",
+    url = "https://github.com/c0d33ngr/mill-sonatype-publish-poc-scala",
     licenses = Seq(License.MIT),
     versionControl = VersionControl.github("c0d33ngr", "example"),
     developers = Seq(Developer("c0d33ngr", "Jeffrey Whewhetu", "https://c0d33ngr.github.io")),
