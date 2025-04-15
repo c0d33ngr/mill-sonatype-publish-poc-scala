@@ -72,23 +72,8 @@ This command checks the server to confirm it's sent. You should see info about t
 gpg --keyserver  keyserver.ubuntu.com --recv-keys longIDHere
 ```
 
-### 6. Publish to Sonatype Maven Central (Individual module `foo`)
+### 6. Publish to Sonatype Maven Central (Individual module `bar`)
 
 ```bash
 ./mill-release -i bar.publishSonatypeCentral
-```
-
-### 7. Publish to Sonatype Maven Central(Several modules publish at once)
-
-```bash
-mill-release -i \
---username myusername \
---password mypassword \
---gpgArgs --passphrase=$MILL_PGP_PASSPHRASE,--no-tty,--pinentry-mode,loopback,--batch,--yes,-a,-b \
---publishArtifacts __.publishArtifacts \
---readTimeout  36000 \
---awaitTimeout 36000 \
---connectTimeout 36000 \
---shouldRelease false \
---bundleName io.github.c0d33ngr-bar:0.0.3
 ```
