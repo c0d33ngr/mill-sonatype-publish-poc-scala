@@ -1,11 +1,9 @@
 import mill._, scalalib._, publish._
 
-import mill.scalalib.sonatypecentral.SonatypeCentralPublishModule
-
 object bar extends ScalaModule with SonatypeCentralPublishModule {
   //def scalaVersion = "2.13.8"
   def scalaVersion = "3.6.4"
-  def publishVersion = "0.0.4"
+  def publishVersion = "0.0.6"
 
   def pomSettings = PomSettings(
     description = "Mill Sonatype Publish PoC Scala",
