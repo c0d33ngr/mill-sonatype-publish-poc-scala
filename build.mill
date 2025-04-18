@@ -3,7 +3,7 @@ import mill._, scalalib._, publish._
 object bar extends ScalaModule with SonatypeCentralPublishModule {
   //def scalaVersion = "2.13.8"
   def scalaVersion = "3.6.4"
-  def publishVersion = "0.0.6"
+  def publishVersion = "0.0.7"
 
   def pomSettings = PomSettings(
     description = "Mill Sonatype Publish PoC Scala",
